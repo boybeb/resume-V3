@@ -3,40 +3,91 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Profile - Wasin Nauncheang</title>
+  <title>Wasin Nauncheang | Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">My Portfolio</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">WASIN</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
-          <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
-          <li class="nav-item"><a class="nav-link" href="employment.html">Employment</a></li>
-          <li class="nav-item"><a class="nav-link" href="skill.html">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="others.html">Others</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#employment">Employment</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- About Section -->
-  <section id="about" class="container py-5 text-center">
-    <img src="หล่อเท่.jpg " class="rounded-circle mb-3" alt="Profile Photo">
+  <!-- About -->
+  <section id="about" class="text-center">
+    <img src="หล่อเท่.jpg" class="rounded-circle mb-3" alt="Profile Photo">
     <h1>Wasin Nauncheang</h1>
-    <h5><em>สาขาวิชาเทคโนโลยีสารสนเทศ</em></h5>
+    <h5><em>สาขาเทคโนโลยีสารสนเทศ</em></h5>
     <p>คณะวิศวกรรมศาสตร์และเทคโนโลยี <a href="http://pim.ac.th/" target="_blank">สถาบันการจัดการปัญญาภิวัฒน์ (PIM)</a></p>
     <hr>
-    <p>สวัสดีครับ ผมเป็นนักศึกษาที่สนใจด้านการพัฒนาเว็บไซต์ การเขียนโปรแกรม และระบบฐานข้อมูล มีความตั้งใจเรียนรู้เทคโนโลยีใหม่ ๆ และพัฒนาทักษะเพื่อก้าวสู่อาชีพในสาย IT อย่างมืออาชีพ</p>
+    <p>ผมเป็นนักศึกษาที่สนใจด้านการพัฒนาเว็บไซต์ การเขียนโปรแกรม และเทคโนโลยีสมัยใหม่
+      มุ่งมั่นพัฒนาตนเองให้เป็นนักพัฒนาซอฟต์แวร์มืออาชีพที่สร้างคุณค่าให้กับองค์กร</p>
   </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2 class="mb-3">Education</h2>
+    <div class="panel">
+      <ul>
+        <li>ปริญญาตรี – เทคโนโลยีสารสนเทศ, สถาบันการจัดการปัญญาภิวัฒน์ (PIM)</li>
+        <li>มัธยมปลาย – แผนวิทย์-คณิต โรงเรียนมัธยมศึกษาประจำจังหวัด</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Employment -->
+  <section id="employment">
+    <h2 class="mb-3">Employment History</h2>
+    <div class="panel">
+      <ul>
+        <li>ทำงานกับครอบครัว – ดูแลควบคุมงาน บริหารงานทั่วไป (4 ปี)</li>
+        <li>พนักงานขายสินค้าเครื่องดื่มมึนเมา – 4 เดือน</li>
+        <li>ปัจจุบัน: พนักงานขายขนมปังและนม – ดูแลสต็อกและแนะนำสินค้า</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="text-center">
+    <h2 class="mb-3">Skills</h2>
+    <div>
+      <span class="badge-skill">HTML</span>
+      <span class="badge-skill">CSS / Bootstrap</span>
+      <span class="badge-skill">JavaScript</span>
+      <span class="badge-skill">MySQL</span>
+      <span class="badge-skill">React.js</span>
+      <span class="badge-skill">UI / UX Design</span>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2 class="mb-3">Contact Me</h2>
+    <ol class="contact-list">
+      <li>📧 wasin.nauncheang<img class="contact-at" src="https://upload.wikimedia.org/wikipedia/commons/4/4e/At_sign.svg" alt="@">pim.ac.th</li>
+      <li>📞 08x-xxx-xxxx</li>
+      <li>🏠 เขตบางเขน กรุงเทพมหานคร (ที่อยู่สมมุติ)</li>
+      <li>🌐 <a href="http://pim.ac.th/" target="_blank">PIM Website</a></li>
+    </ol>
+  </section>
+
+  <footer class="small-note">
+    © 2025 Wasin Nauncheang – PIM IT Student
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
